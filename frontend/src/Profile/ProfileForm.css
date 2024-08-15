@@ -1,0 +1,57 @@
+.profileoutlet{
+    display: flex;
+}
+
+.profile-form {
+    /* max-width: 500px; */
+    max-width: 50%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.profile-form input,
+.profile-form select,
+.profile-form button {
+    width: 90%;
+    padding: 0.75rem;
+    margin: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.profile-form input,
+.profile-form select {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.profile-form select,
+.profile-form button{
+    width: 95%;
+}
+
+.profile-form input:hover,
+.profile-form select:hover,
+.profile-form button:hover {
+    background-color:#444444;
+}
+
+.profile-form input::placeholder {
+    color: #888;
+}
+
+.profile-form button {
+    background-color: #ffa600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-form button:hover {
+    background-color: #ff7300;
+}
