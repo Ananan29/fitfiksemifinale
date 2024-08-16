@@ -280,16 +280,29 @@ const Profile = () => {
     return (
         <div className='profileoutlet'>
             <form onSubmit={handleSubmit} className="profile-form">
-                <input id="name" type="text" name="name" value={profileData.name} onChange={handleChange} placeholder={data.name} required />
-                <input id="email" type="email" name="email" value={profileData.email} onChange={handleChange} placeholder={data.email} required />
-                <input id="password" type="password" name="password" value={profileData.password} onChange={handleChange} placeholder={"*******"} required />
-                <input id="age" type="number" name="age" value={profileData.age} onChange={handleChange} placeholder={
+                <div className={"b"}>
+                    <p className={"p"}> Name </p>
+                    <input id="name" type="text" name="name" value={profileData.name} onChange={handleChange} placeholder={data.name} required />
+                </div>
+                <div className={"b"}>
+                <p className={"p"}> Email </p><input id="email" type="email" name="email" value={profileData.email} onChange={handleChange} placeholder={data.email} required />
+                </div>
+                <div className={"b"}>
+                <p className={"p"}> Password </p><input id="password" type="password" name="password" value={profileData.password} onChange={handleChange} placeholder={"*******"} required />
+                </div>
+                <div className={"b"}>
+                <p className={"p"}> Age </p><input id="age" type="number" name="age" value={profileData.age} onChange={handleChange} placeholder={
                     // dayjs()-
-                    data.age} />
-                <input id="height" type="number" name="height" value={profileData.height} onChange={handleChange} placeholder={data.height} />
-                <input id="weight" type="number" name="weight" value={profileData.weight} onChange={handleChange} placeholder={data.weight} />
+                    data.age} />                </div>
+                <div className={"b"}>
+                <p className={"p"}> Height </p><input id="height" type="number" name="height" value={profileData.height} onChange={handleChange} placeholder={data.height} />
+                </div>
+                <div className={"b"}>
+                <p className={"p"}> Weight </p><input id="weight" type="number" name="weight" value={profileData.weight} onChange={handleChange} placeholder={data.weight} />
+                </div>
+                <div>
                 <select id="goal" name="goal" value={profileData.goal} onChange={handleChange}>
-                    <option value="gain">Gain Weight</option>
+                <option value="gain">Gain Weight</option>
                     <option value="maintain">Maintain Weight</option>
                     <option value="lose">Lose Weight</option>
                 </select>
@@ -307,6 +320,10 @@ const Profile = () => {
                     <option value="veryActive">Very Active</option>
                 </select>
                 <button type="submit">Update Profile</button>
+                </div>
+                
+                
+                    
             </form>
             {/* <div className='profile-form'>
                 info
